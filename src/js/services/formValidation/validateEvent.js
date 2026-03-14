@@ -3,8 +3,6 @@
   CS233JS Final Project
   03/10/2026
 
-  JS for the Cat Gallery Page
+  JS Validation Form For Create Event
 
 */
-
-import './general';

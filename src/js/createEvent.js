@@ -1,9 +1,9 @@
 /*
   Jason Lewis
-  CS233JS W26 Lab 07
+  CS233JS Final Project
   03/10/2026
 
-  JS for the create event form page
+  JS for the create event form
 
 */
 
