@@ -20,6 +20,8 @@ module.exports = (env, argv) =>
     entry: {
       // my pages here
       home: './src/js/home.js',
+      gallery: './src/js/gallery.js',
+      createEvent: './src/js/createEvent.js',
     },
     output: {
       path: path.resolve(__dirname, "dist"),
@@ -58,6 +60,18 @@ module.exports = (env, argv) =>
         chunks: ["home"],
         inject: "body",
         filename: "index.html",
+      }),
+      new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/catGallery.html"),
+        chunks: ["gallery"],
+        inject: "body",
+        filename: "catGallery.html",
+      }),
+      new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/createEvent.html"),
+        chunks: ["createEvent"],
+        inject: "body",
+        filename: "createEvent.html",
       }),
       new copyPlugin({
         patterns: [

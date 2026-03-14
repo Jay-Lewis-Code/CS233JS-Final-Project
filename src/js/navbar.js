@@ -11,6 +11,8 @@
 // Add new navigation links here
 const navLinks = [
   { label: 'Home',   href: './' },
+  { label: 'Gallery',   href: './catGallery.html' },
+  { label: 'Create Event',   href: './createEvent.html' },
 ];
 
 export default function navBar () {
