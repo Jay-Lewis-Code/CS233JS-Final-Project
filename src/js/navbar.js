@@ -31,7 +31,7 @@ export default function navBar () {
     // Return the <li> for this link, adding the 'active' class if it matches the current page
     return `
       <li class="nav-item">
-        <a class="nav-link${isActive ? ' active' : ''}" href="${href}">${label}</a>
+        <a href="${href}" class="nav-link px-2${isActive ? ' active' : ''}" >${label}</a>
       </li>`;
     //.join('') is called on the array returned by to concat into a single string (to replace)
   }).join('');
@@ -39,16 +39,39 @@ export default function navBar () {
   // Inject the full navbar HTML into the #navbar placeholder element
   document.getElementById('navbar').innerHTML =
   `
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <i class="bi bi-arrow-through-heart-fill"></i>
-          Board Game Cats!
-        </a>
-        <ul class="navbar-nav ms-auto">
-          ${items}
-        </ul>
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+            <i class="bi bi-arrow-through-heart-fill" width="40" height="32" role="img" aria-label="Bootstrap"></i>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="nav-items">
+            ${items}
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" disabled>
+          </form>
+
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+
+
+
       </div>
-    </nav>
+    </div>
   `;
 }
+
+
