@@ -12,7 +12,6 @@
 const navLinks = [
   { label: 'Home',   href: './' },
   { label: 'Gallery',   href: './catGallery.html' },
-  { label: 'Create Event',   href: './createEvent.html' },
 ];
 
 export default function navBar () {
@@ -52,24 +51,13 @@ export default function navBar () {
             ${items}
           </ul>
 
+          <a href="./createEvent.html" class="btn btn-primary">Create Event</a>
+
+          <!--
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
             <input type="search" class="form-control" placeholder="Search..." aria-label="Search" disabled>
           </form>
-
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
-
-
+          -->
 
       </div>
     </div>
