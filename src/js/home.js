@@ -25,7 +25,7 @@ class EventDisplay {
     const container = document.querySelector('.events-container');
     
     if (this.events.length === 0) {
-      container.innerHTML = '<p>No events yet. Create one to get started!</p>';
+      container.innerHTML = '<p class="text-center">No events yet. Create one to get started!</p>';
       return; // Exit before creating modal
     }
 
