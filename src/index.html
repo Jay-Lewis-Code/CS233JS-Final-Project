@@ -23,67 +23,15 @@
       </div>
 
       <div class="row">
-        <div class="list-group col-8 mx-auto">
-
-          <!-- Event Item #1 -->
-          <button type="button" class="list-group-item list-group-item-action p-3 border mb-3" data-bs-toggle="modal" data-bs-target="#eventModal">
-            <div class="d-flex gap-3">
-              <img src="./assets/images/thumb-images/meetup-image-01.jpg" alt="event" class="rounded" style="width: 120px; height: 120px; object-fit: cover;">
-              <div class="flex-grow-1">
-                <h5 class="mb-1">Event Title</h5>
-                <p class="text-secondary mb-2">Brief description of the event</p>
-                <p class="small text-muted mb-0"><strong>8:34 AM</strong> • Dec 23, 2025</p>
-                <p class="small text-muted">Location Address</p>
-              </div>
-            </div>
-          </button>
-
-          <!-- Event Item #2 -->
-          <button type="button" class="list-group-item list-group-item-action p-3 border mb-3" data-bs-toggle="modal" data-bs-target="#eventModal">
-            <div class="d-flex gap-3">
-              <img src="./assets/images/thumb-images/meetup-image-02.jpg" alt="event" class="rounded" style="width: 120px; height: 120px; object-fit: cover;">
-              <div class="flex-grow-1">
-                <h5 class="mb-1">Event Title</h5>
-                <p class="text-secondary mb-2">Brief description of the event</p>
-                <p class="small text-muted mb-0"><strong>8:34 AM</strong> • Dec 23, 2025</p>
-                <p class="small text-muted">Location Address</p>
-              </div>
-            </div>
-          </button>
-
-          <!-- Event Item #3 -->
-          <button type="button" class="list-group-item list-group-item-action p-3 border mb-3" data-bs-toggle="modal" data-bs-target="#eventModal">
-            <div class="d-flex gap-3">
-              <img src="./assets/images/thumb-images/meetup-image-03.jpg" alt="event" class="rounded" style="width: 120px; height: 120px; object-fit: cover;">
-              <div class="flex-grow-1">
-                <h5 class="mb-1">Event Title</h5>
-                <p class="text-secondary mb-2">Brief description of the event</p>
-                <p class="small text-muted mb-0"><strong>8:34 AM</strong> • Dec 23, 2025</p>
-                <p class="small text-muted">Location Address</p>
-              </div>
-            </div>
-          </button>
-
-          <!-- Event Item #4 -->
-          <button type="button" class="list-group-item list-group-item-action p-3 border mb-3" data-bs-toggle="modal" data-bs-target="#eventModal">
-            <div class="d-flex gap-3">
-              <img src="./assets/images/thumb-images/meetup-image-04.jpg" alt="event" class="rounded" style="width: 120px; height: 120px; object-fit: cover;">
-              <div class="flex-grow-1">
-                <h5 class="mb-1">Event Title</h5>
-                <p class="text-secondary mb-2">Brief description of the event</p>
-                <p class="small text-muted mb-0"><strong>8:34 AM</strong> • Dec 23, 2025</p>
-                <p class="small text-muted">Location Address</p>
-              </div>
-            </div>
-          </button>
-
+        <div class="list-group col-8 mx-auto events-container">
+          <!-- Events will be dynamically loaded here -->
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal HTML - stays static in the page -->
     <div class="modal fade" id="eventModal" tabindex="-1">
-      <div class="modal-dialog" id="eventModal">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modalTitle">Event Title</h5>
