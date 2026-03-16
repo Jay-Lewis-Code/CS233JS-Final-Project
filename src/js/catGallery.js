@@ -130,11 +130,11 @@ function createBreedInfo(breed) {
 }
 
 /**
- * Create a complete breed card
- * @param {Object} breed - Breed object from API
- * @param {Array} images - Array of image objects for this breed
- * @returns {string} HTML string for complete card
- */
+  Create a complete breed card
+    @param {Object} breed - Breed object from API
+    @param {Array} images - Array of image objects for this breed
+    @returns {string} HTML string for complete card
+*/
 function createBreedCard(breed, images) {
   const carousel = createCarousel(breed.id, images);
   const info = createBreedInfo(breed);
@@ -150,8 +150,8 @@ function createBreedCard(breed, images) {
 }
 
 /**
- * Render the entire gallery
- */
+  Render the entire gallery
+*/
 async function renderGallery() {
   const galleryContainer = document.getElementById('catGallery');
   
