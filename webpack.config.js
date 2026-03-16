@@ -20,7 +20,7 @@ module.exports = (env, argv) =>
     entry: {
       // my pages here
       home: './src/js/home.js',
-      gallery: './src/js/gallery.js',
+      gallery: './src/js/catGallery.js',
       createEvent: './src/js/createEvent.js',
     },
     output: {
@@ -82,9 +82,8 @@ module.exports = (env, argv) =>
           },
         ],
       }),
-      /* app uses global SERVER_URL rather than process.env.SERVER_URL */
       new webpack.DefinePlugin({
-        SERVER_URL: JSON.stringify(process.env.SERVER_URL),
+        CAT_API_KEY: JSON.stringify(process.env.CAT_API_KEY),
       }),
     ],
     /* separates js (and css) that is shared between bundles - allows browser to cache */
